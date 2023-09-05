@@ -1,7 +1,10 @@
+import { useRouter } from 'next/router';
+import BenefitsSection from '@/sections/benefits';
+import { benefitsBenefits, benefitsSubtitle, benefitsTitle } from '@/data/sections-data';
 
-        import Container2iplw0c9q from '../components/Container2iplw0c9q';
-        export default function App() {
-          return (
-            <Container2iplw0c9q></Container2iplw0c9q>
-          );
-        }
+export default function App() {
+  const locale = useRouter().locale || 'en';
+  return (
+    <BenefitsSection title={benefitsTitle[locale]} subtitle={benefitsSubtitle[locale]} benefits={benefitsBenefits}/>
+  );
+}
