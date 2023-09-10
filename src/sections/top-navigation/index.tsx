@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import styles from './styles.module.css';
@@ -13,41 +14,61 @@ interface TopNavigationProps {
   }[];
 }
 
-function handleClick(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+function handleClick(setIsOpen: (isOpen: boolean) => void, event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
   event.preventDefault();
-    
-    const hash = (event.currentTarget.getAttribute('href') || '').split('#')[1];
-    if (hash) {
-        const target = document.getElementById(hash);
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    }
+  setIsOpen(false);    
+  const hash = (event.currentTarget.getAttribute('href') || '').split('#')[1];
+  if (hash) {
+      const target = document.getElementById(hash);
+      if (target) {
+          target.scrollIntoView({
+              behavior: 'smooth'
+          });
+      }
+  }
 }
 
 export default function TopNavigation(props: TopNavigationProps) {  
   const locale = useRouter().locale || 'en';
   const { navigationOptions } = props;
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <>
-    {/* <div className={styles.TopNavigationDrawerButton}><Image src={DrawerButton} alt='Drawer Button' /></div> */}
-      <div className={styles.TopNavigationContainer}>
+    <div className={styles.TopNavigationContainer}>
+      <div className={`${styles.TopNavigation__Backdrop} ${isOpen ? styles.show : ''}`} onClick={() => setIsOpen(false)}>
+        <div className={styles.TopNavigation__SideNavigation}>
+          {isOpen && <nav key='Home'>
+              <Link href='/' onClick={(e) => handleClick(setIsOpen, e)}>Home</Link>
+            </nav> }
+          {isOpen && navigationOptions.map((navigationOption) => (
+            <nav key={navigationOption.key}>
+              <Link href={navigationOption.url} onClick={(e) => handleClick(setIsOpen, e)}>{navigationOption.key}</Link>
+            </nav> 
+          ))}
+          {isOpen && <Button value='Sign Up' onClickAction={() => { window.location.href = 'https://reconcilio.web.app/register';  }}/>}
+        </div>
+      </div>
+      <div className={styles.TopNavigation__HorizontalContainer}>
+        <div className={styles.TopNavigation__Mobile}>
+          <button className={styles.TopNavigation__Hamburger} onClick={() => setIsOpen(!isOpen)}>☰</button>
+          <div className={styles.TopNavigation__ReconcilioLogoMobile}>
+            <Image src={ReconcilioLogo} alt="Reconcilio Logo" />
+          </div>
+          <div className={styles.TopNavigation__Dummy} />
+        </div>
         <div className={styles.TopNavigation}>
           <div className={styles.ReconcilioLogo}>
             <Image src={ReconcilioLogo} alt="Reconcilio Logo" />
           </div>
-          <div className={styles.TopNavigation__HorizontalContainer}>
-              {navigationOptions.map((navigationOption) => (
-                <div key={navigationOption.key}>
-                  <Link href={navigationOption.url} onClick={handleClick}>{navigationOption.key}</Link>
-                </div> 
-              ))}
-              <Button value='Sign Up' onClickAction={() => { window.location.href = 'https://reconcilio.web.app/register';  }}/>
+          <div className={styles.TopNavigation__HorizontalContainer__HorizontalContainer}>
+            {navigationOptions.map((navigationOption) => (
+              <nav key={navigationOption.key}>
+                <Link href={navigationOption.url} onClick={(e) => handleClick(setIsOpen, e)}>{navigationOption.key}</Link>
+              </nav> 
+            ))}
+            <Button value='Sign Up' onClickAction={() => { window.location.href = 'https://reconcilio.web.app/register';  }}/>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

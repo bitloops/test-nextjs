@@ -1,10 +1,20 @@
 .TopNavigationContainer {
+  display: flex;
+  /* justify-content: flex-end; */
+  /* min-width: 40rem;
+  
+  align-items: center;
+  gap: 2.5rem;
+  flex: 1 0 0; */
+}
+
+.TopNavigation__HorizontalContainer {
   position: fixed;
   width: 100%;
   background: rgba(255, 255, 255, 0.90);
   align-items: center;
   justify-content: center; 
-
+  /* justify-content: space-between;  */
   display: flex;
   align-items: center; /* This will center its children vertically */
 }
@@ -27,7 +37,7 @@
   /* gap: 0.625rem; */
 }
 
-.TopNavigation__HorizontalContainer {
+.TopNavigation__HorizontalContainer__HorizontalContainer {
   min-width: 40rem;
   display: flex;
   justify-content: flex-end;
@@ -36,7 +46,7 @@
   flex: 1 0 0;
 }
 
-.TopNavigation__HorizontalContainer div a {
+.TopNavigation__HorizontalContainer__HorizontalContainer nav a {
   text-decoration: none;
   color: #000;
   text-align: center;
@@ -49,8 +59,87 @@
   line-height: normal;
 }
 
+.TopNavigation__SideNavigation {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.TopNavigation__SideNavigation nav {
+  margin-bottom: 1rem;
+}
+
+.TopNavigation__SideNavigation nav a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: Futura;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.TopNavigation__Backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 128, 1); /* semi-transparent navy */
+  z-index: 1000; /* ensure it's below the navigation but above other content */
+}
+
+.show {
+  display: block;
+}
+
+.TopNavigation__Mobile {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.TopNavigation__Hamburger {
+  width: 33.33vw;
+  color: #000080;
+  font-size: 3em;
+  background: none;
+  border: none;
+  padding-left: 0.5rem;
+  padding-right: 0;
+  display: flex;
+  text-align: left;
+  align-items: left; /* To vertically align the content, if needed */
+  justify-content: flex-start; /* Align the content to the left */
+}
+
+.TopNavigation__ReconcilioLogoMobile {
+  width: 33.33vw;
+  display: flex;
+  align-items: center; /* To vertically align the content, if needed */
+  justify-content: center; /* Align the content to the center */
+}
+
+.TopNavigation__Dummy {
+  min-width: 33.33vw;
+  display: flex;
+  align-items: center; /* To vertically align the content, if needed */
+  justify-content: flex-end; /* Align the content to the right */
+}
+
+@media (min-width: 954px) {
+  .TopNavigation__Mobile {
+    display: none;
+  }
+
+  .TopNavigation__SideNavigation {
+    display: none;
+  }
+}
+
 @media (max-width: 953px) {
-  .TopNavigation__HorizontalContainer {
+  .TopNavigation {
     display: none;
   }
 }

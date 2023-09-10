@@ -1,7 +1,7 @@
 .ButtonDefault {
   display: flex;
   background: none;
-  border: none;
+  border: 1px solid #FFF;
   margin: 0;
   color: inherit;
   cursor: pointer;

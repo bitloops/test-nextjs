@@ -15,10 +15,12 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
   return (
     <div className={styles.Layout}>
       <Head>
-        <title>Next.js Test Output - Replace this</title>
+        <title>Reconcilio - Automate, Standardize and Control Reconciliation processes in minutes!</title>
         <meta
           name="description"
-          content="High-level language for building enterprise-grade backends 10x faster"
+          content="Automate, Standardize and Control Reconciliation processes in minutes!
+          Save time, ensure accuracy and scalability, and focus on high value-added tasks
+          "
         />
         <meta
           property="og:image"
@@ -27,7 +29,9 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
         <meta property="og:title" content="Bitloops" />
         <meta
           property="og:description"
-          content="High-level language for building enterprise-grade backends 10x faster"
+          content="Automate, Standardize and Control Reconciliation processes in minutes!
+          Save time, ensure accuracy and scalability, and focus on high value-added tasks
+          "
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         {/* <meta property="og:image:width" content="1200" />
