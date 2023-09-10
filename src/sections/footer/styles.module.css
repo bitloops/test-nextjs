@@ -1,0 +1,57 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.Footer__ReconcilioLogo {
+  display: flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+
+.Footer__HorizontalContainer {
+  display: flex;
+  /* height: 4.3125rem; */
+  padding: 1rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.Footer__HorizontalContainer div a {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  /* Desktop / Small */
+  font-family: Futura;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.Footer__HorizontalContainer__HorizontalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.Footer__Copyright {
+  color: #454545;
+  text-align: center;
+  padding-bottom: 20px;
+
+  font-family: Futura;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

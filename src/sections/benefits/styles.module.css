@@ -1,0 +1,105 @@
+.BenefitsSection {
+  display: flex;
+  /* height: 41.875rem; */
+  padding: 5rem 0rem 10rem 0rem;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+}
+
+/* @media (min-width: 1519px) {
+  .BenefitsSectionBenefits {
+    width: 1519px;
+  }
+} */
+
+@media (max-width: 1129px) {
+  .BenefitsSection {
+    height: 880px;
+  }
+}
+
+/* @media (max-width: 979px) {
+  .BenefitsSection {
+    height: 840px;
+  }
+} */
+
+@media (max-width: 739px) {
+  .BenefitsSection {
+    height: 1550px;
+  }
+}
+
+.BenefitsSection h1 {
+  align-self: stretch;
+  color: #000;
+  text-align: center;
+  font-family: Futura;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.BenefitsSection h2 {
+  align-self: stretch;
+  color: #000;
+  text-align: center;
+  font-family: Futura;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.BenefitsSectionBenefits {
+  display: flex;
+  padding: 80px 0px;
+  justify-content: center;  /* This will ensure that if there are less than 3 items in a row (e.g., only 2), they will remain centered */
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 80px 40px;
+  flex-wrap: wrap;
+  width: 100%; /* Ensure container takes the full width */
+  max-width: 1519px; /* Restrict max width */
+  margin: 0 auto; /* Center the container */
+}
+
+.ComponentsBenefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.ComponentsBenefitHeader {
+  display: flex;
+  height: 27px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.ComponentsBenefitHeader h3 {
+  color: #000080;
+  font-family: Futura;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.ComponentsBenefit p {
+  width: 350px;
+  color: #000;
+  font-family: Futura;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ComponentsBenefitHeaderHover h3 {
+  text-decoration: underline;
+}

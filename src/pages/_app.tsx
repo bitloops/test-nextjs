@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Script from 'next/script';
 import type { AppProps } from 'next/app';
 import TagManager, { TagManagerArgs } from 'react-gtm-module';
+import '../styles/globals.css'
 import DefaultLayout from '../layouts/default';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';

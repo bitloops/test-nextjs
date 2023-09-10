@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import styles from '@/styles/styles.module.css';
+import styles from './styles.module.css';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 type Benefit = {

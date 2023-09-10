@@ -1,0 +1,106 @@
+.HeroSection {
+  /* max-width: 73.02625rem; */
+  /* padding: 4rem 4rem 4rem 4rem;
+  margin: 4rem 4rem 4rem 4rem; */
+}
+
+.HeroSection__HorizontalContainer {
+  margin-top: 7rem;
+  background-image: url('/assets/HeroBackgroundPolygon.svg');
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: auto 100%;
+
+  display: flex;
+  /*  */
+  /* height: 29.4375rem; */
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1rem;
+  /* flex-shrink: 0; */
+  flex-wrap: wrap;
+
+  max-width: 93rem;
+
+  padding: 2rem 4rem 4rem 2rem;
+  box-sizing: border-box;
+}
+
+.HeroSection__HorizontalContainer__VerticalContainer {
+  display: flex;
+  max-width: 40.1875rem;
+  /* height: 22.625rem; */
+  /* padding: 2.375rem 0rem; */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding: 0rem 0rem 0rem -2rem;
+  /* flex-shrink: 0; */
+}
+
+.HeroSection__HorizontalContainer__VerticalContainer__VerticalContainer {
+  display: flex;
+  /* width: 40.1875rem; */
+  min-height: 12.625rem;
+  /* padding: 2.375rem 0rem; */
+  flex-direction: column;
+  align-items: flex-start;
+  /* gap: 2.5rem; */
+}
+
+.HeroSection__HorizontalContainer__VerticalContainer__VerticalContainer h1 {
+  max-width: 40.1875rem;
+  color: #000;
+  font-family: Futura;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.HeroSection__HorizontalContainer__VerticalContainer__VerticalContainer h2 {
+  max-width: 40.1875rem;
+  color: #C8C8C8;
+  font-family: Futura;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.HeroSection__HorizontalContainer__VerticalContainer__HorizontalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.HeroSection__HorizontalContainer__HeroImageContainer {
+  display: flex;
+  max-width: 90vw;
+  max-height: 83.977vw;
+  width: 31.54881rem;
+  height: 29.4375rem;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url('/assets/Hero-Image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  border-radius: 0.54825rem;
+  border: 0.439px solid var(--chrome-grey-300, #BABCBE);
+  box-shadow: 0px 20.17513px 43.85897px 0px rgba(0, 0, 0, 0.40);
+}
+
+@media (max-width: 953px) {
+  .HeroSection__HorizontalContainer {
+    padding-top: 0rem;
+  }
+}
