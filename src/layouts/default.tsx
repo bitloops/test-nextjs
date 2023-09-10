@@ -24,9 +24,9 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
         />
         <meta
           property="og:image"
-          content="https://storage.googleapis.com/wwwbitloopscom/Bitloops-OG.png"
+          content="https://firebasestorage.googleapis.com/v0/b/bitloops-managed.appspot.com/o/reconcilio%2FHeroSection.png?alt=media&token=68003415-829f-40c7-bd4f-2f70eab5bd95"
         />
-        <meta property="og:title" content="Bitloops" />
+        <meta property="og:title" content="Reconcilio" />
         <meta
           property="og:description"
           content="Automate, Standardize and Control Reconciliation processes in minutes!

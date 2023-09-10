@@ -16,7 +16,7 @@ export default function HeroSection(props: HeroSectionProps) {
   const locale = useRouter().locale || 'en';
   const { header, subheader, primaryCta, secondaryCta } = props;
   return (
-    <div className={styles.HeroSection}>
+    <div id='hero' className={styles.HeroSection}>
       {/* <div className={styles.HeroSection__HeroBackgroundPolygon}><Image className={styles.HeroSection__HeroBackgroundPolygon} src={HeroBackgroundPolygon} alt="Hero Background Polygon" /></div> */}
       <div className={styles.HeroSection__HorizontalContainer}>
         <div className={styles.HeroSection__HorizontalContainer__VerticalContainer}>

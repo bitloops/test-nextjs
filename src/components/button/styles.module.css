@@ -32,7 +32,7 @@
 
 .ButtonSecondary {
   display: flex;
-  background: none;
+  background: white;
   margin: 0;
   color: inherit;
   cursor: pointer;

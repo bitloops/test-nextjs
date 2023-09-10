@@ -2,29 +2,31 @@
   /* max-width: 73.02625rem; */
   /* padding: 4rem 4rem 4rem 4rem;
   margin: 4rem 4rem 4rem 4rem; */
+  display: flex;
+  /* padding: 5rem 0rem 10rem 0rem; */
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
 }
 
 .HeroSection__HorizontalContainer {
+  width: 100%;
   margin-top: 7rem;
   background-image: url('/assets/HeroBackgroundPolygon.svg');
   background-repeat: no-repeat;
-  /* background-position: center; */
+  background-clip: padding-box;
+  background-position: center;
   background-size: auto 100%;
-
   display: flex;
-  /*  */
-  /* height: 29.4375rem; */
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
   gap: 1rem;
-  /* flex-shrink: 0; */
   flex-wrap: wrap;
-
-  max-width: 93rem;
-
+  /* max-width: 93rem; */
   padding: 2rem 4rem 4rem 2rem;
   box-sizing: border-box;
+  align-self: stretch;
 }
 
 .HeroSection__HorizontalContainer__VerticalContainer {
@@ -84,8 +86,7 @@
 
 .HeroSection__HorizontalContainer__HeroImageContainer {
   display: flex;
-  max-width: 90vw;
-  max-height: 83.977vw;
+  max-height: 70vw;
   width: 31.54881rem;
   height: 29.4375rem;
   flex-direction: column;

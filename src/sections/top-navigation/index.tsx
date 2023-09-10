@@ -37,7 +37,7 @@ export default function TopNavigation(props: TopNavigationProps) {
       <div className={`${styles.TopNavigation__Backdrop} ${isOpen ? styles.show : ''}`} onClick={() => setIsOpen(false)}>
         <div className={styles.TopNavigation__SideNavigation}>
           {isOpen && <nav key='Home'>
-              <Link href='/' onClick={(e) => handleClick(setIsOpen, e)}>Home</Link>
+              <Link href='#hero' onClick={(e) => handleClick(setIsOpen, e)}>Home</Link>
             </nav> }
           {isOpen && navigationOptions.map((navigationOption) => (
             <nav key={navigationOption.key}>
