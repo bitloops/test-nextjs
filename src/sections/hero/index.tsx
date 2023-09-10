@@ -1,7 +1,4 @@
 import { useRouter } from 'next/router';
-import Image from 'next/image';
-// import HeroBackgroundPolygon from '@/components/vector-graphics/HeroBackgroundPolygon.svg';
-import HeroImage from '@/assets/Hero-Image.png';
 import styles from './styles.module.css';
 import Button from '@/components/button';
 
@@ -17,7 +14,6 @@ export default function HeroSection(props: HeroSectionProps) {
   const { header, subheader, primaryCta, secondaryCta } = props;
   return (
     <div id='hero' className={styles.HeroSection}>
-      {/* <div className={styles.HeroSection__HeroBackgroundPolygon}><Image className={styles.HeroSection__HeroBackgroundPolygon} src={HeroBackgroundPolygon} alt="Hero Background Polygon" /></div> */}
       <div className={styles.HeroSection__HorizontalContainer}>
         <div className={styles.HeroSection__HorizontalContainer__VerticalContainer}>
           <div className={styles.HeroSection__HorizontalContainer__VerticalContainer__VerticalContainer}>
