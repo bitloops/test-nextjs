@@ -1,36 +1,60 @@
-.frame {
+.frame-390-488 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.frame-390-493 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 20px;
-  padding: 20px;
+  width: 100%;
+  height: 100%;
 }
 
-.instance {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-gap: 20px;
-}
-
-.instance .frame {
+.instance-390-569 {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.instance .frame svg {
-  flex-shrink: 0;
+.frame-I390-569-390-496 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 30%;
 }
 
-.instance .frame p {
-  flex-grow: 1;
-  font-size: 1.25rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+.vector-I390-569-390-584-390-539 {
+  width: 30px;
+  height: 30px;
 }
 
-.instance p {
-  font-size: 1.25rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+.text-I390-569-390-498 {
+  font-size: calc(20px + 0.5vw);
+  width: 70%;
+  word-wrap: break-word;
+}
+
+.text-I390-569-390-500 {
+  font-size: calc(20px + 0.5vw);
+  width: 100%;
+  word-wrap: break-word;
 }
