@@ -10,7 +10,8 @@
 
 .title,
 .subtitle {
-  word-wrap: break-word;
+  font-size: 2em;
+  line-height: 1.2;
 }
 
 .buttons {
@@ -19,14 +20,18 @@
   grid-gap: 20px;
 }
 
+.sign-up,
+.demo {
+  font-size: 1.5em;
+}
+
 .image-block {
   grid-column: span 6;
 }
 
 .image-block img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  max-width: 505px;
 }
 
 @media (max-width: 768px) {
@@ -39,22 +44,25 @@
     grid-column: span 1;
   }
 
-  .buttons {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .title {
-    font-size: 24px;
-  }
-
+  .title,
   .subtitle {
-    font-size: 18px;
+    font-size: 1.5em;
   }
 
   .sign-up,
   .demo {
-    font-size: 16px;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title,
+  .subtitle {
+    font-size: 1.2em;
+  }
+
+  .sign-up,
+  .demo {
+    font-size: 1em;
   }
 }
