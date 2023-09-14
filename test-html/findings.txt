@@ -1,0 +1,5 @@
+Simple:
+https://platform.openai.com/playground/p/CE5al6NxTzedA94ugN6sPLsK?model=gpt-4
+https://platform.openai.com/playground/p/2dMqWf3GjfL5OYaTrd44trRO
+https://platform.openai.com/playground/p/qT2f3MFHisD5FZY5IijOwl7e?model=gpt-4 
+https://platform.openai.com/playground/p/WECRVx9awvNjGnGQFnAbtAQn?model=gpt-4

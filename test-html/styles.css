@@ -1,22 +1,200 @@
-/* This styles the entire div */
-div {
-    border: 2px solid black;
-    padding: 20px;
-    width: 300px;
-    margin: 20px auto; /* centers the div */
-}
+  /* body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+  } */
+  
+  /* Styling for the section's title */
+  /* #element-1 {
+    grid-column: 4 / span 8;
+    grid-row: 1;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+   */
+  /* Styling for the section's subtitle */
+  /* #element-2 {
+    grid-column: 2 / span 10;
+    grid-row: 2;
+    font-size: 1.5rem;
+    text-align: justify;
+  } */
 
-h1 {
-    color: blue;
-    font-family: Arial, sans-serif;
-}
+/* 
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+  }
+  
 
-h2 {
-    color: red;
-    font-family: Arial, sans-serif;
-}
+  #element-1 {
+    grid-column: 4 / span 8;
+    grid-row: 1;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
 
-p {
-    color: green;
-    font-family: Arial, sans-serif;
-}
+  #element-2 {
+    grid-column: 2 / span 10;
+    grid-row: 2;
+    font-size: 1.5rem;
+    text-align: center;
+  } */
+
+  /* body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    font-size: 62.5%; 
+  }
+  
+  #element-1 {
+    grid-column: 4 / span 8;
+    font-size: 3.2rem;
+  }
+  
+  #element-2 {
+    grid-column: 1 / span 12;
+    font-size: 2.4rem;
+  }
+
+
+@media (max-width: 600px) {
+    #element-1 {
+      grid-column: 1 / span 12;
+      font-size: 2.8rem;
+      color:blue;
+    }
+  
+    #element-2 {
+      grid-column: 1 / span 12;
+      font-size: 2rem;
+    }
+  }
+  
+
+  @media (min-width: 601px) and (max-width: 900px) {
+    #element-1 {
+      grid-column: 2 / span 10;
+      font-size: 3rem;
+      color:red;
+    }
+  
+    #element-2 {
+      grid-column: 1 / span 12;
+      font-size: 2.2rem;
+    }
+  }
+  
+
+  @media (min-width: 901px) and (max-width: 1200px) {
+    #element-1 {
+      grid-column: 3 / span 8;
+      font-size: 3.2rem;
+      color:green;
+    }
+  
+    #element-2 {
+      grid-column: 1 / span 12;
+      font-size: 2.4rem;
+    }
+  }
+  
+
+  @media (min-width: 1201px) {
+    #element-1 {
+      grid-column: 4 / span 8;
+      font-size: 3.2rem;
+      color:purple;
+    }
+  
+    #element-2 {
+      grid-column: 1 / span 12;
+      font-size: 2.4rem;
+    }
+  } */
+
+
+  body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    font-size: 62.5%; /* Setting base font size to 10px for easier REM calculation */
+  }
+  
+  #element-1 {
+    grid-column: 4 / span 6;
+    grid-row: 1;
+    font-size: 3.2rem;
+    text-align: center;
+    color: aqua;
+  }
+  
+  #element-2 {
+    grid-column: 1 / span 12;
+    grid-row: 2;
+    font-size: 2.4rem;
+    text-align: justify;
+  }
+
+  /* For tablets */
+@media (max-width: 768px) {
+    #element-1 {
+      grid-column: 2 / span 10;
+      font-size: 2.8rem;
+      color: red;
+    }
+  
+    #element-2 {
+      grid-column: 1 / span 12;
+      font-size: 2rem;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 480px) {
+    #element-1 {
+      grid-column: 1 / span 12;
+      font-size: 2.4rem;
+      color: green;
+    }
+  
+    #element-2 {
+      grid-column: 1 / span 12;
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* For laptops */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #element-1 {
+      grid-column: 3 / span 8;
+      font-size: 3rem;
+      color: blue;
+    }
+  
+    #element-2 {
+      grid-column: 1 / span 12;
+      font-size: 2.2rem;
+    }
+  }
+  
+  /* For external screens */
+  @media (min-width: 1025px) {
+    #element-1 {
+      grid-column: 4 / span 6;
+      font-size: 3.2rem;
+      color:violet;
+    }
+  
+    #element-2 {
+      grid-column: 1 / span 12;
+      font-size: 2.4rem;
+    }
+  }
