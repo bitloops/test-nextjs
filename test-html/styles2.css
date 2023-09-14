@@ -1,0 +1,54 @@
+.container {
+    padding: 2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+}
+
+.feature h3 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+@media (max-width: 48rem) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .feature h3 {
+        font-size: 1rem;
+    }
+
+    .feature p {
+        font-size: 0.875rem;
+    }
+}
