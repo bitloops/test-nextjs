@@ -32,13 +32,13 @@ export default function ComponentBenefit(props: BenefitProps) {
   };
 
   const componentContents = () => (
-    <div className={styles.ComponentsBenefit}>
+    <li className={styles.ComponentsBenefit}>
       <div className={styles.ComponentsBenefitHeader + ' ' + styles[`ComponentsBenefitHeader${state}`]}>
-        <Image src={icon} alt={iconAlt} />
-        <h3>{title}</h3>
+        <Image src={icon} alt="" />
+        <h4>{title}</h4>
       </div>
       <p>{description}</p>
-    </div>
+    </li>
   );
 
   return (

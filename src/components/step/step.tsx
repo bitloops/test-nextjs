@@ -19,14 +19,14 @@ export default function ComponentStep(props: StepProps) {
   const { image, imageAlt, title, description } = step;
 
   return (
-    <div className={styles.ComponentsStepVerticalContainer}>
+    <li className={styles.ComponentsStepVerticalContainer}>
       <div className={styles.ComponentsStepImage}>
-        <Image src={image} alt={imageAlt} style={{width: '323.33px', height: '301.731px'}} />
+        <Image src={image} alt="" style={{width: '323.33px', height: '301.731px'}} />
       </div>
       <div className={styles.ComponentsStepVerticalContainer2}>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-    </div>
+    </li>
   );
 }

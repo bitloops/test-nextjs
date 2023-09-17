@@ -14,9 +14,9 @@ export default function BenefitsSection(props: BenefitsSectionProps) {
   const { title, subtitle, benefits } = props;
   return (
     <div id='features-and-benefits' className={styles.BenefitsSection}>
-      <h1>{title}</h1>
-      <h2>{subtitle}</h2>
-      <div className={styles.BenefitsSectionBenefits}>
+      <h2>{title}</h2>
+      <h3>{subtitle}</h3>
+      <ul className={styles.BenefitsSectionBenefits}>
         {benefits.map((benefit) => (<Benefit key={benefit.id} benefit={{
           id: benefit.id,
           icon: benefit.icon,
@@ -24,7 +24,7 @@ export default function BenefitsSection(props: BenefitsSectionProps) {
           title: benefit.title[locale],
           description: benefit.description[locale],
         }} />))}
-      </div>
+      </ul>
     </div>
   );
 }

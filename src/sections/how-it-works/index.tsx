@@ -13,8 +13,8 @@ export default function HowItWorksSection(props: HowItWorksSectionProps) {
   const { title, steps } = props;
   return (
     <div id='how-it-works' className={styles.HowItWorksSection}>
-      <h1>{title}</h1>
-      <div className={styles.HowItWorksGrid}>
+      <h2>{title}</h2>
+      <ul className={styles.HowItWorksGrid}>
         {steps.map((step) => (<Step key={step.id} step={{
           id: step.id,
           image: step.image,
@@ -22,7 +22,7 @@ export default function HowItWorksSection(props: HowItWorksSectionProps) {
           title: step.title[locale],
           description: step.description[locale],
         }} />))}
-      </div>
+      </ul>
     </div>
   );
 }
