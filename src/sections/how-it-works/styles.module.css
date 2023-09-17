@@ -20,6 +20,7 @@
 
 .HowItWorksGrid {
   display: flex;
+  list-style-type: none;
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;

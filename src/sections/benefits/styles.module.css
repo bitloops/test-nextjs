@@ -55,6 +55,7 @@
 
 .BenefitsSectionBenefits {
   display: flex;
+  list-style-type: none;
   padding: 80px 0px;
   justify-content: center;  /* This will ensure that if there are less than 3 items in a row (e.g., only 2), they will remain centered */
   align-items: flex-start;
