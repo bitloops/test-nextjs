@@ -18,7 +18,7 @@ export default function Footer(props: FooterProps) {
     <div className={styles.Footer}>
       <div className={styles.Footer__HorizontalContainer}>
         <div className={styles.Footer__ReconcilioLogo}>
-          <Image src={ReconcilioLogo} alt="Reconcilio Logo" />
+          <Image src={ReconcilioLogo} alt="Reconcilio" />
         </div>
         <div className={styles.Footer__HorizontalContainer__HorizontalContainer}>
           {navigationOptions.map((navigationOption) => (
