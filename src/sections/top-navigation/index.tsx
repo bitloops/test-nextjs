@@ -51,13 +51,13 @@ export default function TopNavigation(props: TopNavigationProps) {
         <div className={styles.TopNavigation__Mobile}>
           <button className={styles.TopNavigation__Hamburger} onClick={() => setIsOpen(!isOpen)}>☰</button>
           <div className={styles.TopNavigation__ReconcilioLogoMobile}>
-            <Image src={ReconcilioLogo} alt="Reconcilio Logo" />
+            <Image src={ReconcilioLogo} alt="Reconcilio" />
           </div>
           <div className={styles.TopNavigation__Dummy} />
         </div>
         <div className={styles.TopNavigation}>
           <div className={styles.ReconcilioLogo}>
-            <Image src={ReconcilioLogo} alt="Reconcilio Logo" />
+            <Image src={ReconcilioLogo} alt="Reconcilio" />
           </div>
           <div className={styles.TopNavigation__HorizontalContainer__HorizontalContainer}>
             {navigationOptions.map((navigationOption) => (
