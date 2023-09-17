@@ -32,21 +32,21 @@ export default function ComponentBenefit(props: BenefitProps) {
   };
 
   const componentContents = () => (
-    <li className={styles.ComponentsBenefit}>
+    <div className={styles.ComponentsBenefit}>
       <div className={styles.ComponentsBenefitHeader + ' ' + styles[`ComponentsBenefitHeader${state}`]}>
         <Image src={icon} alt="" />
         <h4>{title}</h4>
       </div>
       <p>{description}</p>
-    </li>
+    </div>
   );
 
   return (
-    <div 
+    <li 
       onMouseOver={actions.onMouseOverAction}
       onMouseLeave={actions.onMouseLeaveAction}
     >
         { componentContents() }
-    </div>
+    </li>
   );
 }
