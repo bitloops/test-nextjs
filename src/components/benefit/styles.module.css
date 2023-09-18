@@ -1,37 +1,47 @@
 .ComponentsBenefit {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  display: grid;
   gap: 20px;
 }
 
 .ComponentsBenefitHeader {
   display: flex;
-  height: 27px;
-  justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
+}
+
+.ComponentsBenefitHeader img {
+  width: 30px;
+  height: 30px;
 }
 
 .ComponentsBenefitHeader h4 {
-  color: #000080;
-  font-family: Futura;
-  font-size: 20px;
-  font-style: normal;
+  font-size: 1.25rem;
   font-weight: 700;
-  line-height: normal;
-}
-.ComponentsBenefit p {
-  width: 350px;
-  color: #000;
-  font-family: Futura;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  color: #000080;
 }
 
-.ComponentsBenefitHeaderHover h3 {
-  text-decoration: underline;
+.ComponentsBenefit p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* Mobile and Tablet Styles */
+@media screen and (max-width: 1024px) {
+  .ComponentsBenefitHeader h4 {
+    font-size: 1.1rem;
+  }
+
+  .ComponentsBenefit p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ComponentsBenefitHeader h4 {
+    font-size: 1rem;
+  }
+
+  .ComponentsBenefit p {
+    font-size: 1rem;
+  }
 }

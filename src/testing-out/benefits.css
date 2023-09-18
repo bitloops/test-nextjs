@@ -1,3 +1,12 @@
+/* Responsive Base Styles */
+body {
+  font-family: Futura, sans-serif;
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.5;
+}
+/* */
+
 .BenefitsSection {
   max-width: 1130px;
   margin: 80px auto;
@@ -26,6 +35,49 @@
   gap: 80px 40px;
 }
 
+.ComponentsBenefit {
+  display: grid;
+  gap: 20px;
+}
+
+.ComponentsBenefitHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ComponentsBenefitHeader img {
+  width: 30px;
+  height: 30px;
+}
+
+.ComponentsBenefitHeader h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #000080;
+}
+
+.ComponentsBenefit p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* @media (max-width: 779px) {
+  .BenefitsSection {
+    margin: 20px auto;
+  }
+
+  .BenefitsSectionBenefits {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 780px) and (max-width: 1170px) {
+  .BenefitsSectionBenefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+
 /* Mobile and Tablet Styles */
 @media screen and (max-width: 1024px) {
   .BenefitsSection {
@@ -45,6 +97,14 @@
   .BenefitsSectionBenefits {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px 30px;
+  }
+
+  .ComponentsBenefitHeader h4 {
+    font-size: 1.1rem;
+  }
+
+  .ComponentsBenefit p {
+    font-size: 1.1rem;
   }
 }
 
@@ -66,5 +126,13 @@
   .BenefitsSectionBenefits {
     grid-template-columns: 1fr;
     gap: 40px 20px;
+  }
+
+  .ComponentsBenefitHeader h4 {
+    font-size: 1rem;
+  }
+
+  .ComponentsBenefit p {
+    font-size: 1rem;
   }
 }

@@ -1,0 +1,78 @@
+/* Responsive Base Styles */
+html {
+  font-size: 62.5%; /* 1rem = 10px; Helps with rem calculations */
+}
+
+body {
+  font-family: Futura, sans-serif;
+  font-size: 2rem;
+  color: #000;
+  line-height: 1.5;
+}
+
+.BenefitsSection {
+  max-width: 144.6rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: grid;
+  gap: 3rem;
+}
+
+.BenefitsSection h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.BenefitsSection h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.BenefitsSectionBenefits {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.ComponentsBenefit {
+  display: grid;
+  gap: 1rem;
+}
+
+.ComponentsBenefitHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ComponentsBenefitHeader img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.ComponentsBenefitHeader h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000080;
+}
+
+.ComponentsBenefit p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 768px) {
+  .BenefitsSection {
+    padding: 2rem 1rem;
+  }
+
+  .BenefitsSectionBenefits {
+    grid-template-columns: 1fr;
+  }
+}

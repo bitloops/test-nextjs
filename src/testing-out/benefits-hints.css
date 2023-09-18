@@ -1,0 +1,175 @@
+.BenefitsSection {
+  /*
+  width: 1446px;
+  */
+}
+
+.BenefitsSection h2 {
+  color: #000;
+  font-family: Futura;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* 
+  "x": 533.0,
+  "y": 80.0,
+  "width": 380.0,
+  "height": 43.0
+  */
+}
+
+.BenefitsSection h3 {
+  color: #000;
+  font-family: Futura;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  /* 
+  "x": 243.0,
+  "y": 163.0,
+  "width": 960.0,
+  "height": 32.0
+  */
+}
+
+.BenefitsSectionBenefits {
+  list-style: none;
+}
+
+.ComponentsBenefitHeader img {
+  width: 30px;
+  height: 30px;
+  /* 
+  // Image 1
+  "x": 158.0,
+  "y": 275.0,
+  "width": 30.0,
+  "height": 30.0
+
+  // Image 2
+  "x": 548.0,
+  "y": 275.0,
+  "width": 30.0,
+  "height": 30.0
+
+  // Image 3
+  "x": 938.0,
+  "y": 275.0,
+  "width": 30.0,
+  "height": 30.0
+
+  // Image 4
+  "x": 158.0,
+  "y": 459.0,
+  "width": 30.0,
+  "height": 30.0
+
+  // Image 5
+  "x": 548.0,
+  "y": 459.0,
+  "width": 30.0,
+  "height": 30.0
+
+  // Image 6
+  "x": 938.0,
+  "y": 459.0,
+  "width": 30.0,
+  "height": 30.0
+  */
+}
+
+.ComponentsBenefitHeader h4 {
+  color: #000080;
+  font-family: Futura;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* 
+  // Item 1
+  "x": 208.0,
+  "y": 276.50,
+  "width": 110.0,
+  "height": 27.0
+
+  // Item 2
+  "x": 602.0,
+  "y": 276.50,
+  "width": 110.0,
+  "height": 27.0
+
+  // Item 3
+  "x": 986.0,
+  "y": 276.50,
+  "width": 245.0,
+  "height": 27.0
+
+  // Item 4
+  "x": 213.0,
+  "y": 459.1,
+  "width": 275.0,
+  "height": 27.0
+
+  // Item 5
+  "x": 605.50,
+  "y": 460.50,
+  "width": 147.0,
+  "height": 27.0
+
+  // Item 6
+  x": 988.0,
+  "y": 460.50,
+  "width": 262.0,
+  "height": 27.0
+  */
+}
+
+.ComponentsBenefit p {
+  color: #000;
+  font-family: Futura;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  /* 
+  // Item 1
+  "x": 158.0,
+  "y": 325.0,
+  "width": 350.0,
+  "height": 54.0
+
+  // Item 2
+  "x": 548.0,
+  "y": 325.0,
+  "width": 350.0,
+  "height": 54.0
+
+  // Item 3
+  "x": 938.0,
+  "y": 325.0,
+  "width": 350.0,
+  "height": 54.0
+
+  // Item 4
+  "x": 158.0,
+  "y": 506.21984863281250,
+  "width": 350.0,
+  "height": 54.0
+
+  // Item 5
+  "x": 548.0,
+  "y": 509.0,
+  "width": 350.0,
+  "height": 81.0
+
+  // Item 6
+  "x": 938.0,
+  "y": 509.0,
+  "width": 350.0,
+  "height": 54.0
+
+  */
+}
