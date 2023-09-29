@@ -15,21 +15,29 @@ export const navigationOptions: {[locale: string]: NavigationOption[]} = {
     },
     {
       key: 'Request a Demo',
-      url: 'mailto: hello@reconcilio.com',
+      url: '#contact-us',
+    },
+    {
+      key: 'Contact Us',
+      url: '#contact-us',
     },
   ],
   fr: [
     {
-      key: 'Fonctionnalités et avantages',
+      key: 'Fonctionnalités et Avantages',
       url: '#features-and-benefits',
     },
     {
-      key: 'Comment ça marche',
+      key: 'Comment ça Marche',
       url: '#how-it-works',
     },
     {
-      key: 'Demander une démo',
-      url: 'mailto: hello@reconcilio.com',
+      key: 'Demander une Démo',
+      url: '#contact-us',
+    },
+    {
+      key: 'Contact Us',
+      url: '#contact-us',
     },
   ], 
 };

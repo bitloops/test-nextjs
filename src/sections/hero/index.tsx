@@ -1,6 +1,8 @@
-import { useRouter } from 'next/router';
+import Image from 'next/image';
 import styles from './styles.module.css';
 import Button from '@/components/button';
+import HeroImage from '@/assets/Hero-Image.png';
+import HeroBackgroundPolygon from '@/components/vector-graphics/HeroBackgroundPolygon.svg';
 
 interface HeroSectionProps {
   header: string;
@@ -10,7 +12,6 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection(props: HeroSectionProps) {  
-  const locale = useRouter().locale || 'en';
   const { header, subheader, primaryCta, secondaryCta } = props;
   return (
     <div id='hero' className={styles.HeroSection}>
@@ -21,12 +22,22 @@ export default function HeroSection(props: HeroSectionProps) {
             <h2>{subheader}</h2>
           </div>
           <div className={styles.HeroSection__HorizontalContainer__VerticalContainer__HorizontalContainer}>
-            <Button value={primaryCta} onClickAction={() => { window.location.href = 'https://reconcilio.web.app/register';  }} />
-            <Button type='Secondary' value={secondaryCta} onClickAction={() => { window.open('mailto: hello@reconcilio.com', '_blank'); }} />
+            <Button isActive value={primaryCta} onClickAction={() => { window.location.href = '/#contact-us';  }} />
+            <Button isActive type='Secondary' value={secondaryCta} onClickAction={() => { window.location.href = '/#contact-us'; }} />
           </div>
         </div>
-        <div className={styles.HeroSection__HorizontalContainer__HeroImageContainer} />
+        <Image
+          className={styles.HeroSection__HorizontalContainer__HeroImageContainer} 
+          src={HeroImage}
+          alt=''
+          width={504.773} height={471.188} layout="responsive"
+        /> 
       </div>
+      <Image
+        className={styles.HeroSection__HeroBackgroundPolygon}
+        src={HeroBackgroundPolygon}
+        alt=''
+      /> 
     </div>
   );
 }

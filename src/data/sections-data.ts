@@ -194,6 +194,86 @@ export const howItWorksSteps = [
   },
 ];
 
+export const contactUsTitle: {[locale: string]: string} = {
+  en: 'Contact Us',
+  fr: 'Contactez-nous',
+};
+
+export const contactUsTagline: {[locale: string]: string} = {
+  en: `Have questions or want to sign up?
+  Get in touch.`,
+  fr: `Vous avez des questions ou vous voulez vous inscrire?
+  Contactez-vous.`,
+};
+
+export const contactUsFormLabels: {[key: string]: {[locale: string]: string}} = {
+  email: {
+    en: 'Email',
+    fr: 'Email',
+  },
+  firstName: {
+    en: 'First Name',
+    fr: 'Prénom',
+  },
+  lastName: {
+    en: 'Last Name',
+    fr: 'Nom de famille',
+  },
+  jobTitle: {
+    en: 'Job Title',
+    fr: 'Titre du poste',
+  },
+  company: {
+    en: 'Company',
+    fr: 'Société',
+  },
+  country: {
+    en: 'Country',
+    fr: 'Pays',
+  },
+  comments: {
+    en: 'Comments',
+    fr: 'Commentaires',
+  },
+  policyAgree__text1: {
+    en: 'I have read and agree to Reconcilio’s',
+    fr: 'J\'ai lu et j\'accepte la',
+  },
+  policyAgree__link1__text: {
+    en: 'Privacy Policy',
+    fr: 'Politique de Confidentialité',
+  },
+  policyAgree__link1__href: {
+    en: '/privacy-policy',
+    fr: '/fr/politique-de-confidentialite',
+  },
+  policyAgree__text2: {
+    en: 'and',
+    fr: 'de Reconilio et',
+  },
+  policyAgree__link2__text: {
+    en: 'Terms of Service',
+    fr: 'Conditions d\'utilisation',
+  },
+  policyAgree__link2__href: {
+    en: '/terms-of-service',
+    fr: '/fr/conditions-d-utilisation',
+  },
+  policyAgree__text3: {
+    en: '',
+    fr: 'de Reconilio',
+  },
+  marketingAgree__text1: {
+    en: 'I consent to marketing communications from Reconcilio. You can unsubscribe any time you want.',
+    fr: 'J\'accepte de recevoir des communications marketing de Reconilio. Vous pouvez vous désabonner à tout moment.',
+  },
+  send: {
+    en: 'Send',
+    fr: 'Envoyer',
+  },
+};
+
+
 export type Benefits = {
   id: number;
   icon: StaticImport;

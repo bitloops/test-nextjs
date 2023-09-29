@@ -1,0 +1,54 @@
+.TextArea {
+  display: flex;
+  /* width: 620px; */
+  padding-bottom: 20px;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+
+
+.TextAreaFull {
+  width: 100%;
+}
+
+.TextArea textarea {
+  display: flex;
+  padding: 15px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid #B6B6B6;
+  background: #FFF;
+
+  color: #111;
+  /* Desktop / Small */
+  font-family: Futura;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  resize: none;
+}
+
+.TextArea textarea {
+  width: 100%;
+ }
+
+.TextArea label {
+  color: #111;
+  text-align: center;
+
+  /* Desktop / Small */
+  font-family: Futura;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.TextArea textarea:focus + label,
+.TextArea textarea:not(:placeholder-shown) + label {
+  display: none;
+}

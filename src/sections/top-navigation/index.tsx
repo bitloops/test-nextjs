@@ -44,7 +44,7 @@ export default function TopNavigation(props: TopNavigationProps) {
               <Link href={navigationOption.url} onClick={(e) => handleClick(setIsOpen, e)}>{navigationOption.key}</Link>
             </nav> 
           ))}
-          {isOpen && <Button value='Sign Up' onClickAction={() => { window.location.href = 'https://reconcilio.web.app/register';  }}/>}
+          {isOpen && <Button isActive value='Sign Up' onClickAction={() => { window.location.href = '/#contact-us';  }}/>}
         </div>
       </div>
       <div className={styles.TopNavigation__HorizontalContainer}>
@@ -65,7 +65,7 @@ export default function TopNavigation(props: TopNavigationProps) {
                 <Link href={navigationOption.url} onClick={(e) => handleClick(setIsOpen, e)}>{navigationOption.key}</Link>
               </nav> 
             ))}
-            <Button value='Sign Up' onClickAction={() => { window.location.href = 'https://reconcilio.web.app/register';  }}/>
+            <Button isActive value='Sign Up' onClickAction={() => { window.location.href = '/#contact-us';  }}/>
           </div>
         </div>
       </div>

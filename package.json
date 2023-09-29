@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy": "firebase deploy --only hosting:reconcilio-com",
     "start": "next start",
     "lint": "next lint"
   },

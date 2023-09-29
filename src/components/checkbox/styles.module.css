@@ -1,0 +1,34 @@
+.Checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.Checkbox label {
+  display: inline-block;
+  min-width: 20px;
+  height: 20px;
+  border: 1px solid #000; /* Border of the checkbox */
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.Checkbox input {
+  display: none; /* Hide the default checkbox */
+}
+
+.Checkbox span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000080; /* Blue square */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Initially hidden */
+}
+
+.Checkbox input:checked + span {
+  display: block; /* Show blue square when checked */
+}

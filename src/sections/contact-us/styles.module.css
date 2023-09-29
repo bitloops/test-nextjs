@@ -1,0 +1,26 @@
+.ContactUsSection {
+  max-width: 1130px;
+  margin: 80px auto;
+  padding: 0px 20px;
+}
+
+.ContactUsSection h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.ContactUsSection h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
+
+.ContactUsSection__Form__HorizontalContainer {
+  display: flex;
+  gap: 20px;
+}
