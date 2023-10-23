@@ -1,5 +1,5 @@
 // import Head from 'next/head';
-// import Script from 'next/script';
+import Script from 'next/script';
 import type { AppProps } from 'next/app';
 // import TagManager, { TagManagerArgs } from 'react-gtm-module';
 import '../styles/globals.css'
@@ -30,23 +30,25 @@ function MyApp({ Component, pageProps }: AppProps) {
   
   return (
     <>
-      {/* <Script
-        src="https://tools.luckyorange.com/core/lo.js?site-id=02cc149c"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-4FZTJJ23DY"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
+    {/* <!-- Google tag (gtag.js) --> */}
+    <Script 
+      src="https://www.googletagmanager.com/gtag/js?id=G-BNW4JXYRG3"
+      strategy="afterInteractive"
+    />
+    <Script id="google-analytics" strategy="afterInteractive">
         {`
 window.dataLayer = window.dataLayer || [];
 function gtag(){window.dataLayer.push(arguments);}
 gtag('js', new Date());
 
-gtag('config', 'G-4FZTJJ2XXY');
+gtag('config', 'G-BNW4JXYRG3');
 `}
-      </Script> */}
+      </Script>
+      {/* <Script
+        src="https://tools.luckyorange.com/core/lo.js?site-id=02cc149c"
+        strategy="afterInteractive"
+      />
+     */}
       <DefaultLayout>
         <Component {...pageProps} />
       </DefaultLayout>
